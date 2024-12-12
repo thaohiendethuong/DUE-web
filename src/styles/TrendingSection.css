@@ -1,0 +1,107 @@
+.trending-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  height: 90vh; /* Makes the section take up the full height of the viewport */
+}
+
+
+
+.trending-section h1 { 
+  font-family: 'Nunito', sans-serif; /* Apply the Nunito font */
+  font-size: 60px; /* Adjust the size of the text */
+  font-weight: 900; 
+  text-transform: uppercase; /* Make the text uppercase */
+  letter-spacing: 2px; /* Space out the letters */
+  
+  /* Gradient Text Effect */
+  background: linear-gradient(to bottom, #34acdb, #6ccae4); /* Gradient from light blue to dark blue */
+  -webkit-background-clip: text; /* Apply the gradient to the text (for webkit browsers) */
+  background-clip: text; /* Apply the gradient to the text (for other browsers) */
+  color: transparent; /* Make the text color transparent to show the gradient */
+}
+
+.trending-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #0078d4;
+}
+
+.trend-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  padding: 0 5%;
+  background-color: transparent;
+  height: 80%;
+}
+
+.trend-item {
+  background-color: transparent;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  padding: 0; /* Remove padding to make the box position more controlled */
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative; /* Ensure positioning for the absolute name box */
+  height: 100%;
+}
+
+.trend-item:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+}
+
+.trend-item-image {
+  width: 90%;
+  height: auto;
+  border-radius: 8px;
+  z-index: 10; /* Ensure the image stays below the name box */
+}
+
+.trend-name-box {  
+  background-color: #ffffff; /* White background for the name box */
+  color: #0078d4; /* Blue text color */
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  position: absolute; /* Position the box over the image */
+  bottom: 20px; /* Position at the bottom of the image */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust by half the width to center */
+  z-index: 20; /* Ensure it's above the image */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 70%;
+  height: 15%;
+}
+
+.trend-item h3 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  color: #3895ca;
+  font-size: 1.3rem;
+  margin-bottom: 100px;
+}
+
+.trend-item p {
+  padding: 10px 15%;
+  margin-top: 50px;
+  font-family: 'Nunito', sans-serif; /* Apply the font here */
+  font-size: 1.02rem;
+  font-weight: 300; 
+  color: #3895ca;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .trend-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .trend-grid {
+    grid-template-columns: 1fr;
+  }
+}

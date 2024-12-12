@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300&family=Nunito:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/geomanist');
+/* Page Container */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 170vh;
+  background: linear-gradient(to top, #0077b7, #48cae4);
+}
+
+/* Main Content Container */
+.main-content {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Left Container - 40% Width */
+.left-container {
+  flex: 0 0 35%; /* Take 40% of the width */
+  background: transparent;
+  border-radius: 8px;
+  padding: 50px;
+}
+
+.left-container h2 {
+  font-family: 'Nunito', sans-serif; /* Apply the Nunito font */
+  font-size: 48px; /* Adjust the size of the text */
+  font-weight: 900; 
+  letter-spacing: 2px; /* Space out the letters */
+  margin-bottom: 10px;
+  /* Gradient Text Effect */
+  background: #ffffff; /* Gradient from light blue to dark blue */
+  -webkit-background-clip: text; /* Apply the gradient to the text (for webkit browsers) */
+  background-clip: text; /* Apply the gradient to the text (for other browsers) */
+  color: transparent; /* Make the text color transparent to show the gradient */
+}
+
+.left-container p {
+  margin-top: 0;
+  font-family: 'Nunito', sans-serif; /* Apply the font here */
+  font-size: 20px;
+  font-weight: 300; 
+  color: #ffffff;
+  line-height: 1.1;
+  text-align: justify;
+}
+
+.prompt-input {
+  width: 96%; 
+  height: 30%;          
+  padding: 10px;
+  margin: 0 auto 20px auto; /* Center horizontally and add bottom margin */
+  border-radius: 8px;
+  border: 4px solid #48CAE4;
+  font-family: 'Nunito', sans-serif;
+  color: #0077B6;
+  font-size: 20px;
+  resize: none;
+  display: block;         /* Ensure it's block-level for auto margin to work */
+} ::placeholder{
+  color: #0077B6;
+}
+
+
+.create-button {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  display: block;         /* Ensure button behaves as block element */
+  margin-left: 15%;         /* Center the button horizontally */
+}
+
+.create-button:hover {
+  background-color: #005bb5;
+}
+
+
+/* Right Container - 60% Width */
+/* Right Container */
+.right-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.top-part {
+  padding-top: 10%;
+  display: flex;
+  height: 80%; /* Takes up 70% height */
+}
+
+.bottom-part {
+  height: 20%; /* Takes up 30% height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left-column {
+  flex: 1; /* Takes 1/3 of the width */
+}
+
+.middle-column {
+  flex: 3; /* Takes 1/3 of the width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-column {
+  flex: 1; /* Takes 1/3 of the width */
+}
+
+.image-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.generated-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+
+/* Left Side in Right Container (2.5) */
+.left-side {
+  flex: 0 0 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-row {
+  display: flex;
+  flex-direction: column; /* Stack the items vertically */
+  gap: 0;
+  align-items: center; /* Align items horizontally to the center */
+  justify-content: space-between; /* Distribute the items evenly in height */
+  height: 70%; /* Ensures it takes up full height of the parent container */
+  margin-top: 40px; /* Adds space above the .image-row element */
+}
+
+
+
+
+.image-row img {
+  width: 30%; /* Set width of images */
+  height: auto; /* Keep the aspect ratio */
+
+  box-sizing: border-box; /* Include border and padding in element's total size */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+
+.middle-side {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.generated-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.finish-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.finish-button:hover {
+  background-color: #218838;
+}
+
+/* Spinner Styles */
+.loading-spinner img {
+  width: 500px;
+  height: auto;
+}
+
+.default-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+/* Right Side in Right Container (0.25) */
+.right-side {
+  flex: 0 0 25%;
+}
+
+
+/* Select Menu Styling */
+.select-menu {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 4px solid #48CAE4;
+  background: linear-gradient(to right, #48CAE4, #0077B6);
+  margin: 0 auto 20px auto; /* Center horizontally and add bottom margin */
+  display: block;          /* Ensure it's block-level for auto margin to work */
+  cursor: pointer;
+  
+  color: white;
+  font-weight: 200;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and color */
+}
+
+/* Focus State (Click or Keyboard Focus) */
+.select-menu:focus {
+  outline: none;
+  background: linear-gradient(to right, #0077B6, #48CAE4); /* Reverse gradient */
+  color: #0077B6; /* Change text color on click */
+  border-color: #48CAE4; /* Change border color */
+}
+
+/* Hover State */
+.select-menu:hover {
+  background: linear-gradient(to left, #48CAE4, #0077B6); /* Add a slight hover effect */
+}
+
+
+/* From Uiverse.io by nikk7007 */ 
+.action-button {
+  --color: #42c9db;
+  margin: 10px;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: .3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+ }
+ 
+ .action-button::before, .button::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+ }
+ 
+ .action-button::before {
+  top: -1em;
+  left: -1em;
+ }
+ 
+ .action-button::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+ }
+ 
+ .action-button:hover::before, .action-button:hover::after {
+  height: 410px;
+  width: 410px;
+ }
+ 
+ .action-button:hover {
+  color: rgb(10, 25, 30);
+ }
+ 
+.action-button:active {
+  filter: brightness(.8);
+ }
+
+
+ 
+ .action-button1 {
+  position: relative;
+  width: 59px;
+  height: 59px;
+  border: 0;
+  border-radius: 15px; /* Matches the shape */
+  padding: 0; /* Ensure no padding affects layout */
+  background: transparent;
+  z-index: 0;
+  display: flex;
+  justify-content: center; /* Center content */
+  align-items: center;
+  overflow: hidden; /* Prevent overflow issues */
+  color: #48CAE4;
+}
+
+.action-button1::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* Fills the parent fully */
+  border-radius: 15px; /* Matches the parent border radius */
+  padding: 3px; /* Creates the inner gradient effect */
+  background: linear-gradient(225deg, #48CAE4, #0077B6);
+  mask: 
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+  mask-composite: exclude; /* Ensures only the border is visible */
+  -webkit-mask-composite: destination-out; /* For Safari compatibility */
+  z-index: -1; /* Keeps the pseudo-element behind the content */
+}
+
+
+.action-button1 i {
+  font-size: 27.5px;
+}
+
+
+
+ .action-div {
+  width: 92px;
+  height: 92px;
+  display: inline-block;
+  border: 4px solid;
+  border-image: linear-gradient(225deg, #0077B6, #48CAE4) 1;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.action-div img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+  width: 45%;
+  justify-content: center;
+  background: linear-gradient(to top, #0077b7, #48cae4);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #ffffff;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #ffffff;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #5bdaf1;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+.button-92 {
+  width: 288px;
+  height: 51px;
+  gap: 0px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #0077B6, #48CAE4);
+  border: none;
+  cursor: pointer;
+  color: white;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears on top */
+}
+
+/* Popup Content */
+.popup-content {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  width: 30%;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: popup-slide-in 0.3s ease-out;
+}
+
+.popup-content h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #0077B6;
+}
+
+.popup-content p {
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: black;
+}
+
+/* Popup Buttons (Back and Add to Cart) */
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.popup-button {
+  flex: 1;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.back-button {
+  flex: 3;
+  background: transparent;
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #0077B6;
+}
+
+.back-button:hover {
+  background: #e0e0e0;
+}
+
+.add-to-cart-button {
+  flex: 7;
+  border-radius: 12px;
+  height: 59px;
+  background: linear-gradient(to bottom, #48CAE4, #0077B6);
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.add-to-cart-button:hover {
+  background: #005bb5;
+}
+
+/* Popup Modify Button */
+.popup-modify-button {
+  flex: 7;
+  border-radius: 12px;
+  height: 59px;
+  background: linear-gradient(to bottom, #48CAE4, #0077B6);
+  color: white;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 15px;
+
+  width: 100%;
+  cursor: pointer;
+}
+
+.popup-modify-button br {
+  font-size: 15px;
+}
+
+.popup-modify-button:hover {
+  background: #0077b6;
+}
+
+.popup-modify-button br {
+  line-height: 2; /* Space between lines of text */
+}
+
+/* Animation for Popup */
+@keyframes popup-slide-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+ 
+

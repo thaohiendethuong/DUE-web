@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:wght@300&family=Nunito:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.product-showcase {
+  text-align: center;
+  width: 100%;
+  padding: 50px 20px;
+  background:linear-gradient(to bottom, #027bb8, #47c9e3);
+}
+
+
+.product-showcase h1 {
+  font-family: 'Nunito', sans-serif; /* Apply the Nunito font */
+  font-size: 60px; /* Adjust the size of the text */
+  font-weight: 900; 
+  text-transform: uppercase; /* Make the text uppercase */
+  letter-spacing: 2px; /* Space out the letters */
+  
+  /* Gradient Text Effect */
+  background: #ffffff; /* Gradient from light blue to dark blue */
+  -webkit-background-clip: text; /* Apply the gradient to the text (for webkit browsers) */
+  background-clip: text; /* Apply the gradient to the text (for other browsers) */
+  color: transparent; /* Make the text color transparent to show the gradient */
+}
+
+.product-showcase h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0078d4;
+  margin-bottom: 30px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2px solid #0078d4; /* Add border around the box */
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.product-page .product-card {
+  flex: 0 0 auto;
+  background: linear-gradient(to top, #027bb8, #47c9e3);
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card h2 {
+  font-family: 'Nunito', sans-serif; /* Apply the Nunito font */
+  font-size: 25px; /* Adjust the size of the text */
+  font-weight: 700; 
+  text-transform: uppercase; /* Make the text uppercase */
+  letter-spacing: 2px; /* Space out the letters */
+  
+  /* Gradient Text Effect */
+  background: #0077B6; /* Gradient from light blue to dark blue */
+  -webkit-background-clip: text; /* Apply the gradient to the text (for webkit browsers) */
+  background-clip: text; /* Apply the gradient to the text (for other browsers) */
+  color: transparent; /* Make the text color transparent to show the gradient */
+  margin-bottom: 0;
+}
+.product-card p {
+  margin-top: 0;
+  font-family: 'Nunito', sans-serif; /* Apply the font here */
+  font-size: 25px;
+  font-weight: 300; 
+  color: #555;
+}
+
+/* Hover effect to make the items bounce up */
+.product-card:hover {
+  transform: translateY(-10px) scale(1.05); /* Bounce up effect */
+}
+
+@media (max-width: 768px) {
+  .product-showcase h2 {
+    font-size: 1.5rem;
+  }
+
+  .product-card {
+    width: 120px;
+  }
+}
+
+/* Wrapper for product card image */
+.product-card .image-wrapper {
+  position: relative;
+  width: 208px;
+  height: 208px;
+  background: linear-gradient(to top, #0077b6, #48cae4); /* Gradient background */
+  border-radius: 10px; /* Match the card's border radius */
+  overflow: hidden; /* Ensure the image stays within the wrapper */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Product card image styling */
+.product-card .image-wrapper img {
+  width: 90%;
+  height: auto;
+  object-fit: cover; /* Ensure the image fits well */
+}
+
+
+
+

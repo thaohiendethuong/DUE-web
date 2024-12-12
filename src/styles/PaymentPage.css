@@ -1,0 +1,371 @@
+.payment-page-container {
+    margin: 5%;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  /* Shipping Information Section */
+  .shipping-info {
+    flex: 6;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shipping-info {
+    width: 95%; /* The width will apply to all children */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .shipping-info-header {
+    height: 55px;
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(to right, #0077B6, #48CAE4);
+    border-radius: 0px;
+    padding: 0 20px; /* Add horizontal padding */
+    margin-bottom: 20px;
+  }
+  
+  /* H2 Styling */
+  .shipping-info-header h2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    margin: 0; /* Remove extra spacing */
+  }
+  
+  /* Input Styling */
+  .shipping-info .first-form input {
+    width: 100%; /* Use 100% to match the parent width */
+    height: 60px; /* Adjust height for better design */
+    padding: 10px; /* Inner padding */
+    margin-bottom: 15px;
+    border: none; /* Remove default border */
+    border-radius: 0px;
+    font-size: 20px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2); /* Subtle bottom shadow */
+    outline: none; /* Remove default focus outline */
+    background: #fff; /* Ensure a white background */
+    color: #8D8D8D;
+    box-sizing: border-box; /* Ensure padding is included in width */
+  }
+  
+  /* Placeholder Styling */
+  .shipping-info form input::placeholder {
+    font-family: 'Nunito', sans-serif;
+    color: #8D8D8D;
+  }
+  
+  /* Focus Effect */
+  .shipping-info form input:focus {
+    box-shadow: 0 4px 8px rgba(0, 119, 182, 0.3); /* Slightly stronger shadow on focus */
+    background: #f9f9f9; /* Slightly lighter background on focus */
+  }
+  
+  
+  /* Dropdown Group */
+.dropdown-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Dropdown Styling */
+  .dropdown-group select {
+    flex: 1; /* Equal width for each dropdown */
+    height: 60px; /* Match the height of the inputs */
+    padding: 10px; /* Inner padding */
+    border: none; /* Remove default border */
+    border-radius: 0px; /* Remove border radius for consistency */
+    font-size: 20px; /* Match font size with inputs */
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2); /* Subtle bottom shadow */
+    outline: none; /* Remove default focus outline */
+    background: #fff; /* White background */
+    color: #8D8D8D; /* Text color for consistency */
+    box-sizing: border-box; /* Include padding in width */
+  }
+  
+  /* Placeholder or Option Styling */
+  .dropdown-group select option {
+    color: #8D8D8D; /* Subtle placeholder color */
+    font-size: 16px; /* Slightly smaller font size for dropdown options */
+  }
+  
+  /* Hover Effect */
+  .dropdown-group select:hover {
+    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow on hover */
+  }
+  
+  /* Focus Effect */
+  .dropdown-group select:focus {
+    box-shadow: 0 6px 6px rgba(0, 119, 182, 0.3); /* Stronger shadow on focus */
+    background: #f9f9f9; /* Slightly lighter background */
+    color: #005bb5; /* Darker text for better focus visibility */
+  }
+  
+  
+  /* Shipping Method Section */
+  .shipping-method {
+    width: 100%;
+    margin: 20px auto; /* Center and space below */
+    background: transparent;
+  }
+  
+  /* Shipping Method Header */
+  .shipping-method-header {
+    height: 55px;
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: flex-start; /* Align text to the left */
+    background: linear-gradient(to right, #0077B6, #48CAE4);
+    border-radius: 0px;
+    padding: 0 20px; /* Inner padding */
+    margin-bottom: 15px; /* Space below the header */
+  }
+  
+  /* Shipping Method Title */
+  .shipping-method-header h3 {
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Shipping Method Form */
+  .shipping-method form label {
+    display: flex;
+    align-items: center; /* Center align checkbox and text */
+    margin-bottom: 10px; /* Space between options */
+    font-size: 20px;
+    color: #333;
+    cursor: pointer; /* Pointer cursor for better UX */
+  }
+  
+  /* Price Styling */
+  .shipping-method .price {
+    margin-left: auto;
+    font-weight: bold;
+    color: #0077b6;
+  }
+  
+  /* Payment Method Section */
+  .payment-method {
+    width: 100%;
+    margin: 20px auto;
+    background: transparent;
+  }
+  
+  /* Payment Method Header */
+  .payment-method-header {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(to right, #0077B6, #48CAE4);
+    padding: 0 20px;
+    margin-bottom: 15px;
+  }
+  
+  /* Payment Method Title */
+  .payment-method-header h3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    margin: 0;
+  }
+  
+  /* Payment Method Form */
+  .payment-method form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* Checkbox Styling */
+  .select-item-checkbox {
+    appearance: none; /* Remove default checkbox styling */
+    width: 35px;
+    height: 35px;
+    margin-right: 10px; /* Space between checkbox and label */
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Checkbox Gradient Border */
+  .select-item-checkbox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Match checkbox shape */
+    background: linear-gradient(to bottom, #0077B6, #48CAE4);
+    z-index: -1;
+    mask: 
+      linear-gradient(#000 0 0) content-box, 
+      linear-gradient(#000 0 0); /* Mask to make border gradient visible */
+    -webkit-mask: 
+      linear-gradient(#000 0 0) content-box, 
+      linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+  }
+  
+  /* Checkbox Tick on Checked */
+  .select-item-checkbox:checked::after {
+    content: '✓';
+    font-size: 16px;
+    font-weight: bold;
+    color: #0077b6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  /* Order Summary Section */
+  .order-summary {
+    flex: 4;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column
+  }
+
+  .order-summary {
+    width: 95%; /* The width will apply to all children */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .order-summary-header {
+    height: 55px;
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(to right, #0077B6, #48CAE4);
+    border-radius: 0px;
+    padding: 0 20px; /* Add horizontal padding */
+    margin-bottom: 20px;
+  }
+  
+  /* H2 Styling */
+  .order-summary-header h2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    margin: 0; /* Remove extra spacing */
+  }
+  
+  .order-items {
+    margin-bottom: 20px;
+  }
+  
+  .order-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .order-item img {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .pad-left {
+    padding-left: 30px;
+  }
+
+  .order-item h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+
+  }
+  
+  .order-item p {
+    margin: 5px 0;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .order-item .price {
+    font-size: 20px;
+    margin-left: auto;
+    font-weight: bold;
+    color: #48CAE4;
+  }
+  
+  /* Order Total */
+  .order-total p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .order-total .total {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .order-total .total span {
+    font-size: 32px;
+    font-weight: bold;
+    color: #48CAE4;
+  }
+  .order-total span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #48CAE4;
+  }
+  
+  /* Checkout Button */
+  .checkout-button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to bottom, #48cae4, #0077b6);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .checkout-button:hover {
+    background: linear-gradient(to bottom, #0077b6, #48cae4);
+  }
+
+  .return-to-cart {
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    color:#0077B6;
+  }
+
+  
+
+  

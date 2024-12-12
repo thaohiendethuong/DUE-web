@@ -1,0 +1,24 @@
+.footer {
+    width: 100%;
+    background: radial-gradient(circle, #46c8e2 29%, #0279ba 43%,  rgba(0,119,183,1) 100%);
+
+
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  .footer p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1.4rem;margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      font-size: 0.9rem;
+    }
+  }
+  

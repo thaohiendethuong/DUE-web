@@ -1,0 +1,572 @@
+/* General Cart Page Styling */
+.cart-page {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .cart-title {
+    font-size: 60px;
+    color: #0077b6;
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 0px;
+  }
+  
+  .cart-container {
+    display: flex;
+    gap: 5%;
+    margin-top: 50px;
+  }
+  
+  /* Cart Items Section */
+  .cart-items {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-item-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .cart-info-span {
+    margin-left: 50px;
+  }
+  
+  .cart-item-info {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .cart-item-info h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .cart-item-info p {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  
+  .cart-item-info .price {
+    color: #48CAE4;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .cart-item-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .edit-button,
+  .delete-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .edit-button {
+    background: #0077b6;
+    color: white;
+  }
+  
+  .delete-button {
+    background: white;
+    color: #0077b6;
+    border: 1px solid #0077b6;
+  }
+  
+  .edit-button:hover {
+    background: #005bb5;
+  }
+  
+  .delete-button:hover {
+    background: #e0f7fa;
+  }
+  
+  .select-item-checkbox {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Cart Summary Section */
+  .cart-summary {
+    flex: 2;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+  }
+  
+  .cart-summary h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #0077b6;
+    margin-bottom: 20px;
+  }
+  
+  .summary-details {
+    margin-bottom: 20px;
+  }
+  
+  .summary-details .key {
+    font-size: 20px;
+    font-weight: 800;
+    color: #0077b6;
+  }
+  .summary-details p {
+    display: flex;
+    justify-content: space-between;
+    color: #0077b6;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px 0;
+  }
+  
+  .summary-details p.total {
+    font-weight: bold;
+    color: #0077b6;
+  }
+  
+  .apply-discount {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .apply-discount input {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  /* Apply Button Styled Like Edit Button */
+.apply-discount .apply-button {
+    width: 150px; /* Set a consistent width */
+    height: 40px; /* Adjust height for better visual balance */
+    border: none;
+    border-radius: 15px; /* Fully rounded corners */
+  
+    font-family: "Nunito", sans-serif;
+    font-size: 20px; /* Match font size for a consistent look */
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-flex; /* Use flexbox for proper alignment */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    text-align: center;
+  
+    /* Gradient Background */
+    background: linear-gradient(to bottom, #48cae4, #0077b6);
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Hover Effect */
+  .apply-discount .apply-button:hover {
+    background: linear-gradient(to bottom, #0077b6, #48cae4); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+  }
+  
+  
+  .invoice-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .invoice-checkbox label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .note-box {
+    width: 100%;
+    height: 80px;
+    border: 2px solid #0077b6;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+    outline: none;
+  }
+  
+  .checkout-button {
+    margin-top: 20px;
+    width: 98%;
+    padding: 15px 20px;
+    background: linear-gradient(to bottom, #0077b6, #48cae4);
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .checkout-button:hover {
+    background: #005bb5;
+  }
+
+/* Styling for Buttons */
+.edit-button,
+.delete-button {
+  width: 100px;
+  height: 25px; /* Increase height for better alignment */
+  border: none;
+  border-radius: 25px; /* Fully rounded corners */
+
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: inline-flex; /* Use flexbox for proper alignment */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  text-align: center;
+}
+
+/* Edit Button (Blue Gradient) */
+.edit-button {
+  background: linear-gradient(to bottom, #48cae4, #0077b6);
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.edit-button:hover {
+  background: linear-gradient(to bottom, #0077b6, #48cae4);
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Delete Button (Gradient Text and Border) */
+.delete-button {
+    position: relative; /* Needed for pseudo-element positioning */
+    padding: 10px 20px; /* Add padding for size */
+    font-size: 20px;
+    font-weight: 900;
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Fully rounded corners */
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    background: transparent; /* Keep background transparent */
+  
+    /* Gradient Text */
+    color: transparent; /* Make the text transparent to show gradient */
+    background: linear-gradient(to bottom, #0077b6, #48cae4); /* Gradient for text */
+    -webkit-background-clip: text; /* Clip gradient to the text */
+    background-clip: text; /* For non-webkit browsers */
+    z-index: 1; /* Ensure text stays above the pseudo-element */
+    overflow: hidden; /* Prevent pseudo-element overflow */
+  }
+  
+  /* Gradient Border */
+  .delete-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px; /* Match the button radius */
+    background: linear-gradient(to top, #0077b6, #48cae4); /* Gradient for border */
+    padding: 2.5px; /* Create spacing for the border */
+    box-sizing: border-box; /* Ensure the border fits correctly */
+    z-index: -1; /* Place behind the button text */
+    mask: 
+      linear-gradient(#000 0 0) content-box, 
+      linear-gradient(#000 0 0); /* Create the border-only effect */
+    -webkit-mask: 
+      linear-gradient(#000 0 0) content-box, 
+      linear-gradient(#000 0 0); /* For webkit-based browsers */
+    mask-composite: exclude; /* Ensure the inside is transparent */
+    -webkit-mask-composite: destination-out; /* Safari compatibility */
+  }
+  
+  /* Hover Effect */
+  .delete-button:hover {
+    background: linear-gradient(to bottom, #48cae4, #0077b6); /* Reverse gradient for text */
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  
+  .delete-button:hover::before {
+    background: linear-gradient(to bottom, #48cae4, #0077b6); /* Reverse gradient for border */
+  }
+  
+ /* Wrapper for Gradient Border */
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+    border-radius: 15px; /* Slight rounding for modern design */
+    background: linear-gradient(to bottom, #48cae4, #0077b6); /* Gradient for border */
+    padding: 1px; /* Thickness of the border */
+    box-sizing: border-box; /* Include padding in the size */
+    width: 100%; /* Full width for input */
+    max-width: 400px; /* Limit the maximum width */
+  }
+  
+  /* Transparent Input */
+  .input-with-gradient {
+    width: 100%;
+    height: 100%; /* Ensure it fills the wrapper */
+    padding: 10px 15px; /* Inner padding for comfortable typing */
+    font-size: 16px; /* Font size for text */
+    font-weight: 400;
+    border: none; /* Remove default border */
+    border-radius: 15px; /* Match the gradient border slightly */
+    outline: none; /* Remove default focus outline */
+    background: #fff; /* White background for clean contrast */
+    color: #0077b6; /* Text color for better contrast */
+    box-sizing: border-box; /* Ensure padding fits properly */
+  }
+  
+  /* Placeholder Styling */
+  .input-with-gradient::placeholder {
+    color: black; /* Subtle placeholder color */
+    font-family: "Nunito", sans-serif; /* Make it look clean */
+    font-size: 20px;
+    font-weight: 500;
+}
+  
+  /* Hover Effect for Wrapper */
+  .input-wrapper:hover {
+    background: linear-gradient(to bottom, #0077b6, #48cae4); /* Change gradient direction on hover */
+  }
+  
+  /* Focus Effect for Input */
+  .input-with-gradient:focus {
+    background: #f9f9f9; /* Slightly lighter background on focus */
+    color: #005bb5; /* Darker text for better focus visibility */
+  }
+
+    /* Styling for the Gradient Checkbox */
+.select-item-checkbox {
+    appearance: none; /* Remove default checkbox styling */
+    width: 40px; /* Size of the checkbox */
+    height: 40px;
+    border: 2px solid transparent; /* Transparent initial border */
+    border-radius: 5px; /* Slightly rounded corners */
+    position: relative; /* For pseudo-element positioning */
+    cursor: pointer;
+    outline: none;
+    background: transparent; /* Ensure background stays transparent */
+    z-index: 1; /* Ensure it's above the pseudo-element */
+  }
+  
+  /* Gradient Border */
+  .select-item-checkbox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; /* Match the checkbox radius */
+    background: linear-gradient(to bottom, #0077b6, #48cae4); /* Gradient for border */
+    z-index: -1; /* Place behind the checkbox */
+    mask: 
+      linear-gradient(#000 0 0) content-box, 
+      linear-gradient(#000 0 0); /* Mask ensures only the border is visible */
+    -webkit-mask: 
+      linear-gradient(#000 0 0) content-box, 
+      linear-gradient(#000 0 0); /* For webkit-based browsers */
+    mask-composite: exclude; /* Ensures the inside is transparent */
+    -webkit-mask-composite: destination-out; /* For Safari compatibility */
+    padding: 2.5px; /* Creates the visible border effect */
+    box-sizing: border-box;
+  }
+  
+  /* Tick (Checkmark) */
+  .select-item-checkbox:checked::after {
+    content: '✓'; /* Checkmark character */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the checkmark */
+    font-size: 30px; /* Size of the checkmark */
+    font-weight: 900;
+    color: #48CAE4; /* Color of the checkmark */
+    z-index: 2; /* Ensure it's above the background */
+  }
+  
+  /* Checked State for Border */
+  .select-item-checkbox:checked::before {
+    background: linear-gradient(to right, #48cae4, #0077b6); /* Reverse gradient for the border */
+  }
+
+  /* Styling for the Wrapper */
+.invoice-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between checkbox and label */
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    color: #0077b6;
+  }
+  
+  /* Gradient Checkbox */
+  .styled-checkbox {
+    appearance: none; /* Remove default checkbox styling */
+    width: 34px; /* Checkbox size */
+    height: 34px;
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners for the checkbox */
+    position: relative; /* Needed for pseudo-elements */
+    cursor: pointer;
+    outline: none; /* Remove focus outline */
+    background: transparent; /* Transparent background for the center */
+    z-index: 1; /* Ensure it's above the pseudo-elements */
+  }
+  
+  /* Gradient Border (Using ::before) */
+  .styled-checkbox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Match the checkbox radius */
+    background: linear-gradient(to bottom, #0077b6, #48cae4); /* Gradient border */
+    z-index: -1; /* Place behind the checkbox */
+    padding: 2px; /* Border thickness */
+    box-sizing: border-box;
+  
+    /* Masking to show only the border */
+    mask: 
+      linear-gradient(#000 0 0) content-box, 
+      linear-gradient(#000 0 0); 
+    -webkit-mask: 
+      linear-gradient(#000 0 0) content-box, 
+      linear-gradient(#000 0 0); /* For webkit browsers */
+    mask-composite: exclude; /* Exclude the inner part */
+    -webkit-mask-composite: destination-out; /* For Safari */
+  }
+  
+  /* Checkmark (Tick) */
+  .styled-checkbox:checked::after {
+    content: '✓'; /* Checkmark character */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the checkmark */
+    font-size: 20px; /* Size of the checkmark */
+    font-weight: bold;
+    color: #48cae4; /* Tick color */
+    z-index: 2; /* Place it above everything */
+  }
+  
+  /* Checked State for Gradient Border */
+  .styled-checkbox:checked::before {
+    background: linear-gradient(to right, #48cae4, #0077b6); /* Reverse gradient when checked */
+  }
+  
+  .invoice-checkbox label {
+    font-size: 20px;
+    color: #0077B6;
+  }
+
+  /* Wrapper for Gradient Border */
+.note-wrapper {
+    position: relative;
+    display: inline-block;
+    border-radius: 10px; /* Rounded corners for a smooth border */
+    background: linear-gradient(to right, #48cae4, #0077b6); /* Gradient for the border */
+    padding: 3px; /* Thickness of the gradient border */
+    box-sizing: border-box; /* Include padding in size calculation */
+    width: 100%; /* Full width for responsiveness */
+    max-width: 400px; /* Optional: Limit the maximum width */
+    overflow: hidden; /* Prevent inner box from overlapping the border */
+  }
+  
+  /* Wrapper for Gradient Border */
+.note-wrapper {
+    position: relative;
+    display: inline-block;
+    border-radius: 10px; /* Smooth rounded corners */
+    background: linear-gradient(to right, #48cae4, #0077b6); /* Gradient for border */
+    padding: 3px; /* Adjusted border thickness for alignment */
+    padding-bottom: 0;
+    box-sizing: border-box; /* Include padding in size calculation */
+    width: 100%; /* Full width for responsiveness */
+    max-width: 400px; /* Optional: Limit the maximum width */
+    overflow: hidden; /* Prevent textarea from overflowing the wrapper */
+  }
+  
+  /* Transparent Textarea */
+  .note-box {
+    width: 100%; /* Full width of the wrapper minus border */
+    height: 200px; /* Adjust height to fit within the wrapper without cutting off */
+    padding: 10px; /* Inner padding for comfortable typing */
+    font-size: 16px; /* Readable font size */
+    font-weight: 400;
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Slightly smaller than wrapper radius */
+    outline: none; /* Remove focus outline */
+    background: #fff; /* White background for clean contrast */
+    color: #0077b6; /* Text color for better readability */
+    box-sizing: border-box; /* Ensure padding is accounted for in size */
+    resize: none; /* Disable resizing for a consistent look */
+  }
+  
+  /* Placeholder Styling */
+  .note-box::placeholder {
+    color: black; /* Subtle placeholder color */
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+  }
+  
+  /* Hover Effect for Wrapper */
+  .note-wrapper:hover {
+    background: linear-gradient(to bottom, #0077b6, #48cae4); /* Change gradient direction on hover */
+  }
+  
+  /* Focus Effect for Textarea */
+  .note-box:focus {
+    background: #f9f9f9; /* Slightly lighter background on focus */
+    color: #005bb5; /* Darker text for better visibility */
+    box-shadow: inset 0 0 5px rgba(0, 119, 182, 0.2); /* Subtle inset shadow for focus */
+  }
+  
+  
+  
+
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+
+  

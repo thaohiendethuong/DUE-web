@@ -1,0 +1,404 @@
+.product-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .filter-sidebar {
+    width: 30%;
+    background-color: transparent;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex; /* Make the sidebar a flex container */
+    justify-content: flex-end; /* Align child to the right */
+  }
+
+  .product-sidebar {
+    width: 70%;
+    background-color: transparent;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex; /* Make the sidebar a flex container */
+    justify-content: flex-start; /* Align child to the right */
+  }
+  
+  .filter-container {
+    width: 80%;
+    background-color: white; /* Corrected background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shading effect */
+  }  
+
+  .search-bar{
+    margin-top: 8%;
+    text-align: center;
+  }
+  
+  
+  .search-bar input {
+    width: 70%;
+    padding: 5%;
+    margin-bottom: 20px;
+    border-radius: 30px; /* Half circle effect on left and right */
+    border: 3px solid #0077B6;
+
+    font-family: 'Nunito', sans-serif; /* Apply the Nunito font */
+    font-size: 20px; /* Adjust the size of the text */
+    font-weight: 300; 
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-left: 10%;
+  }
+  
+  .filters h3 {
+    margin-bottom: 30px;
+    line-height: 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+    font-weight: 410;
+    color: #0077B6;
+    width: 100%; /* Ensure it spans the full width, forcing it to stay on top */
+  }
+
+  .filters .checkbox-wrapper-1 {
+    display: flex;
+    flex-wrap: wrap; /* Allows the checkboxes to wrap onto the next line */
+    margin-bottom: 15px; /* Optional: Adds spacing between the checkboxes */
+    margin-right: 10%; /* Optional: Adds spacing on the right */
+    justify-content: flex-start; /* Align items to the left (default) */
+  }
+
+  
+  .filters label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+  }
+  
+  .product-list {
+    margin: 10px;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white; /* Corrected background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shading effect */
+  }
+  
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .product-bar .product-card-bar {
+    width: 80%; /* Set the width of the card to 80% */
+    background-color: #fff; /* White background color */
+    border: 2px solid #48CAE4; /* Border with the color #48CAE4 */
+    border-radius: 10%; /* Rounded corners */
+    padding: 15px; /* Padding inside the card */
+    text-align: center; /* Center the text inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Apply a subtle shadow */
+    margin: 10px; /* Optional: adds space around each card */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+  }
+  
+  
+  .product-bar .product-card-bar img {
+    width: 70%;
+    height: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    box-sizing: border-box;
+  }
+  
+  .product-name {
+    font-weight: bold;
+    margin-bottom: -10px;
+  }
+  
+  .product-size, .product-price {
+    margin-bottom: 0px;
+  }
+
+  .product-size {
+    display: flex;
+    justify-content: center; /* Center the text inside the .product-size */
+    align-items: center; /* Center content vertically */
+    border-radius: 10px;
+    width: 40%;
+    background: linear-gradient(to bottom, #48CAE4, #0077B6);
+    color: white; /* Make text white for better contrast */
+    padding: 3px; /* Add padding for spacing inside the element */
+    margin-bottom: 10px; /* Optional: Adds spacing between product-size and other elements */
+    
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+    .product-name {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    letter-spacing: 5%;
+    font-weight: 450;
+    color: #0077B6;
+}
+    .product-price {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    letter-spacing: 5%;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.product-footer {
+    display: flex;
+    justify-content: space-between; /* Distribute items with space between */
+    align-items: center; /* Vertically align items to the center */
+    width: 95%; /* Ensure the footer takes up full width of the parent container */
+  }
+  
+  .product-quant {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    letter-spacing: 5%;
+    font-weight: 300;
+    margin: 0; /* Optional: remove margin if you want tighter spacing */
+  }
+  
+  .add-to-cart {
+    width: 35px; /* Set a fixed width to make the button square */
+    height: 35px; /* Set a fixed height to make the button square */
+    background-color: rgb(245, 245, 245); /* Gray background color */
+    border: none; /* Remove border */
+    display: flex;
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+    cursor: pointer; /* Make it look clickable */
+    color: #0077B6; /* Set the text color to white */
+    border-radius: 5px;
+  }
+  
+  .add-to-cart i {
+    font-size: 18px; /* Set the icon size */
+  }
+  
+  
+  
+  .add-to-cart:hover {
+    background-color: #0056b3;
+  }
+  
+  .pagination {
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+  }
+  
+  .pagination-btn {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border: none;
+    background: linear-gradient(to top, #0077B6, #48CAE4);
+    cursor: pointer;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    letter-spacing: 5%;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .pagination-btn:hover {
+    background-color: #ddd;
+  }
+  
+
+.product-bar h2 {
+    font-family: 'Nunito', sans-serif; /* Apply the Nunito font */
+  font-size: 60px; /* Adjust the size of the text */
+  font-weight: 900; 
+  text-transform: uppercase; /* Make the text uppercase */
+  letter-spacing: 2px; /* Space out the letters */
+  
+  /* Gradient Text Effect */
+  background: linear-gradient(to bottom, #0077B6, #48CAE4); /* Gradient from light blue to dark blue */
+  -webkit-background-clip: text; /* Apply the gradient to the text (for webkit browsers) */
+  background-clip: text; /* Apply the gradient to the text (for other browsers) */
+  color: transparent; /* Make the text color transparent to show the gradient */
+
+    text-align: center;
+}
+
+.checkbox-wrapper-1 *,
+  .checkbox-wrapper-1 ::after,
+  .checkbox-wrapper-1 ::before {
+    box-sizing: border-box;
+  }
+  .checkbox-wrapper-1 [type=checkbox].substituted {
+    margin: 0;
+    width: 0;
+    height: 0;
+    display: inline;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .checkbox-wrapper-1 [type=checkbox].substituted + label:before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    height: 1.15em;
+    width: 1.15em;
+    margin-right: 0.6em;
+    color: rgba(0, 0, 0, 0.275);
+    border: solid 0.06em;
+    box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em inset, 0 0 0 0.07em transparent inset;
+    border-radius: 0.2em;
+    background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xml:space="preserve" fill="white" viewBox="0 0 9 9"><rect x="0" y="4.3" transform="matrix(-0.707 -0.7072 0.7072 -0.707 0.5891 10.4702)" width="4.3" height="1.6" /><rect x="2.2" y="2.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 12.1877 2.9833)" width="6.1" height="1.7" /></svg>') no-repeat center, white;
+    background-size: 0;
+    will-change: color, border, background, background-size, box-shadow;
+    transform: translate3d(0, 0, 0);
+    transition: color 0.1s, border 0.1s, background 0.15s, box-shadow 0.1s;
+  }
+  .checkbox-wrapper-1 [type=checkbox].substituted:enabled:active + label:before,
+  .checkbox-wrapper-1 [type=checkbox].substituted:enabled + label:active:before {
+    box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(0, 0, 0, 0.1) inset;
+    background-color: #f0f0f0;
+  }
+  .checkbox-wrapper-1 [type=checkbox].substituted:checked + label:before {
+    background-color: #3B99FC;
+    background-size: 0.75em;
+    color: rgba(0, 0, 0, 0.075);
+  }
+  .checkbox-wrapper-1 [type=checkbox].substituted:checked:enabled:active + label:before,
+  .checkbox-wrapper-1 [type=checkbox].substituted:checked:enabled + label:active:before {
+    background-color: #0a7ffb;
+    color: rgba(0, 0, 0, 0.275);
+  }
+  .checkbox-wrapper-1 [type=checkbox].substituted:focus + label:before {
+    box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(0, 0, 0, 0.1) inset, 0 0 0 3.3px rgba(65, 159, 255, 0.55), 0 0 0 5px rgba(65, 159, 255, 0.3);
+  }
+  .checkbox-wrapper-1 [type=checkbox].substituted:focus:active + label:before,
+  .checkbox-wrapper-1 [type=checkbox].substituted:focus + label:active:before {
+    box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(0, 0, 0, 0.1) inset, 0 0 0 3.3px rgba(65, 159, 255, 0.55), 0 0 0 5px rgba(65, 159, 255, 0.3);
+  }
+  .checkbox-wrapper-1 [type=checkbox].substituted:disabled + label:before {
+    opacity: 0.5;
+  }
+
+  .checkbox-wrapper-1 [type=checkbox].substituted.dark + label:before {
+    color: rgba(255, 255, 255, 0.275);
+    background-color: #222;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xml:space="preserve" fill="rgba(34, 34, 34, 0.999)" viewBox="0 0 9 9"><rect x="0" y="4.3" transform="matrix(-0.707 -0.7072 0.7072 -0.707 0.5891 10.4702)" width="4.3" height="1.6" /><rect x="2.2" y="2.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 12.1877 2.9833)" width="6.1" height="1.7" /></svg>');
+  }
+  .checkbox-wrapper-1 [type=checkbox].substituted.dark:enabled:active + label:before,
+  .checkbox-wrapper-1 [type=checkbox].substituted.dark:enabled + label:active:before {
+    background-color: #444;
+    box-shadow: 0 0 0.04em, 0 0.06em 0.16em -0.03em transparent inset, 0 0 0 0.07em rgba(255, 255, 255, 0.1) inset;
+  }
+  .checkbox-wrapper-1 [type=checkbox].substituted.dark:checked + label:before {
+    background-color: #a97035;
+    color: rgba(255, 255, 255, 0.075);
+  }
+  .checkbox-wrapper-1 [type=checkbox].substituted.dark:checked:enabled:active + label:before,
+  .checkbox-wrapper-1 [type=checkbox].substituted.dark:checked:enabled + label:active:before {
+    background-color: #c68035;
+    color: rgba(0, 0, 0, 0.275);
+  }
+  .checkbox-wrapper-1 [type=checkbox].substituted + label {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .button-42 {
+    align-items: center;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: initial;
+    background-image: none;
+    border-style: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: center;
+    line-height: 14px; /* Reduced line height to half */
+    margin: 0 auto; /* Center the button */
+    min-height: 60px; /* Updated height */
+    outline: none;
+    overflow: visible;
+    padding: 10px 0; /* Adjusted padding to fit the new size */
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 200px; /* Fixed width */
+    word-break: keep-all;
+    z-index: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px; /* Adjusted font size for the smaller button */
+    color: #0077B6;
+  }
+  
+  .button-42:before,
+  .button-42:after {
+    border-radius: 30px; /* Adjusted to match the requested border-radius */
+  }
+  
+  .button-42:before {
+    background-image: linear-gradient(180deg, #0077B6 0%, #48CAE4 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+  }
+  
+  .button-42:after {
+    background-color: white;
+    bottom: 2px; /* Adjusted for smaller size */
+    content: "";
+    display: block;
+    left: 2px; /* Adjusted for smaller size */
+    overflow: hidden;
+    position: absolute;
+    right: 2px; /* Adjusted for smaller size */
+    top: 2px; /* Adjusted for smaller size */
+    transition: all 100ms ease-out;
+    z-index: -1;
+  }
+  
+  .button-42:disabled {
+    cursor: default;
+    opacity: 0.24;
+  }
+
+  .filter-button {
+    display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+    margin-bottom: 10%;
+  }
+  
+

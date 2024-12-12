@@ -1,0 +1,181 @@
+.reviews {
+  background: linear-gradient(to bottom, #0077b7, #48cae4);
+  color: white;
+  padding: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.reviews-title {
+  font-family: 'Nunito', sans-serif; /* Apply the Nunito font */
+  font-size: 40px; /* Adjust the size of the text */
+  font-weight: 900; 
+  text-transform: uppercase; /* Make the text uppercase */
+  letter-spacing: 2px; /* Space out the letters */
+  
+  /* Gradient Text Effect */
+  background: #ffffff; /* Gradient from light blue to dark blue */
+  -webkit-background-clip: text; /* Apply the gradient to the text (for webkit browsers) */
+  background-clip: text; /* Apply the gradient to the text (for other browsers) */
+  color: transparent; /* Make the text color transparent to show the gradient */
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Aligns boxes at the top */
+}
+
+.review-box {
+  background: linear-gradient(to top, #0077b7, #48cae4);
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center; /* Aligns text to the center horizontally */
+  position: relative;
+  width: 200px; /* Existing width */
+  height: 400px; /* Set the fixed height */
+  overflow-y: auto; /* Enable scrolling for overflowing content */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+  
+  /* Centering content with Flexbox */
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content horizontally */
+
+}
+
+.review-box h3 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.review-box p {
+  margin-top: 20px;
+  font-family: 'Nunito', sans-serif; /* Apply the font here */
+  font-size: 20px;
+  font-weight: 300; 
+  color: #ffffff;
+  line-height: 1.1;
+  text-align: center;
+}
+
+
+.input-box {
+  background: linear-gradient(to top, #0077b7, #48cae4);
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: left;
+  position: relative;
+  width: 400px; /* Existing width */
+  height: 400px; /* Set the fixed height */
+  overflow-y: auto; /* Enable scrolling for overflowing content */
+  margin-right: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+.input-box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+}
+
+.input-box-content .comment-box {
+  height: 100%;
+}
+
+.review-box:hover, 
+.input-box:hover {
+  transform: scale(1.05); /* Slightly scale up the box */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add a deeper shadow effect */
+}
+
+
+.avatar {
+  border-radius: 50%;
+  width: 40%;
+  height: auto; /* Adjust the height automatically based on width */
+  margin-bottom: 10px;
+  border: 3px solid #ddd; /* Add a border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+
+.review-details {
+  margin-bottom: 10px;
+}
+
+.review-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.review-comment {
+  font-size: 14px;
+  color: #666;
+}
+
+.review-stars {
+  font-size: 18px;
+  color: #ffd700;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between stars */
+  padding-bottom: 20px;
+}
+
+.stars i {
+  color: #e6e6e6;
+  font-size: 35px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.stars i.active {
+  color: #ff9c1a
+}
+
+.comment-box {
+  width: 90%;
+  height: 40%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  resize: none;
+}
+
+.submit-button {
+  background: linear-gradient(to right, #48CAE4, #0078D7); /* Linear gradient */
+  color: white;
+  border: 5px solid #0078D7;
+  padding: 10px 20px;
+  border-radius: 50px; /* Fully rounded corners */
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.submit-button:hover {
+  background: linear-gradient(to right, #0078D7, #48CAE4); /* Reverse gradient on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+
+.reviews-container .review-box {
+  flex: 0 0 20%; /* Sets the width to 20% */
+}

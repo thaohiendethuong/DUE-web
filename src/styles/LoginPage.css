@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300&family=Nunito:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to top, #0077B6, #48CAE4);
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-title {
+    font-family: "Nunito", serif;
+    font-weight: 900;
+    font-size: 5rem;
+    color: white;
+    margin: 0.5rem;
+  }
+  
+  .login-subtitle-single-line {
+    font-family: "Nunito", serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: white;
+    margin: 0.5rem;
+  }
+  .login-subtitle-line {
+    padding: 3%;
+    font-family: "Nunito", serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: white;
+    margin: 0.5rem;
+  }
+  
+  .login-subtitle-bold {
+    font-weight: 900;
+  }
+
+  .access-without-login {
+    text-decoration: underline;
+    font-family: "Nunito", serif;
+    font-weight: 100;
+    font-size: 2rem;
+    color: white;
+    margin: 0.5rem;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .button-78 {
+    align-items: center;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: initial;
+    background-image: none;
+    border-style: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: center;
+    line-height: 28px; /* Same line height */
+    margin: 0;
+    min-height: 115px; /* 1.2x the original height of 96px */
+    outline: none;
+    overflow: visible;
+    padding: 24px 96px; /* Same width padding */
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: auto;
+    word-break: keep-all;
+    z-index: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 900;
+    font-size: 2.4rem;
+    color: #0077B6;
+  }
+  
+  @media (min-width: 768px) {
+    .button-78 {
+      padding: 28px 120px; /* Increased padding for larger screens */
+    }
+  }
+  
+  .button-78:before,
+  .button-78:after {
+    border-radius: 13px; /* Reduced border radius further to 13px */
+  }
+  
+  .button-78:before {
+    background-image: linear-gradient(0deg, #0077B6 0, #48CAE4 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+  }
+  
+  .button-78:after {
+    background-color: initial;
+    background-color: white;
+    bottom: 8px; /* Adjusted for 1.2x larger height */
+    content: "";
+    display: block;
+    left: 8px; /* Adjusted */
+    overflow: hidden;
+    position: absolute;
+    right: 8px; /* Adjusted */
+    top: 8px; /* Adjusted */
+    transition: all 100ms ease-out;
+    z-index: -1;
+  }
+  
+  .button-78:hover:not(:disabled):before {
+    background: linear-gradient(92.83deg, #48CAE4 0%, #48CAE4 100%);
+  }
+  
+  .button-78:hover:not(:disabled):after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+  
+  .button-78:active:not(:disabled) {
+    color: #ccc;
+  }
+  
+  .button-78:active:not(:disabled):before {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #48CAE4 0, #48CAE4 100%);
+  }
+  
+  .button-78:active:not(:disabled):after {
+    background-image: linear-gradient(#48CAE4 0, #48CAE4 100%);
+    bottom: 8px; /* Adjusted for 1.2x larger height */
+    left: 8px;
+    right: 8px;
+    top: 8px;
+  }
+  
+  .button-78:disabled {
+    cursor: default;
+    opacity: .24;
+  }
+  

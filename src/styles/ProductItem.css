@@ -1,0 +1,273 @@
+/* Page Container */
+.product-page-container {
+    font-family: 'Nunito', sans-serif;
+    padding: 20px;
+    margin: 0 auto;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally */
+  }
+  
+  /* Breadcrumb Navigation */
+  .breadcrumb {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .breadcrumb a {
+    text-decoration: none;
+    color: #0077b6;
+  }
+  
+  .breadcrumb span {
+    color: #555;
+  }
+  
+  /* Search Bar Section */
+  .search-bar-section {
+    width: 100%; /* Make it span the full width of the container */
+    display: flex;
+    justify-content: flex-end; /* Align the search bar to the right */
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search-bar input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #0077b6;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background: #0077b6;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background: #005bb5;
+  }
+  
+  /* Product Section */
+  .product-cover{
+    width: 85%;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shading for depth */
+    padding: 20px; /* Add padding for inner spacing */
+    gap: 5%;
+  }
+
+  .product-section {
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    margin-bottom: 40px;
+    justify-content: center; /* Center the section content horizontally */
+
+  }
+  
+  
+  /* Product Image Section */
+  .product-image {
+    flex: 4; /* Take 4/10ths of the row */
+    padding: 0px; /* Inner spacing */
+    background: transparent; /* Transparent background */
+    border: 5px solid; /* Border width */
+    border-image: linear-gradient(to top, #0077b6, #48cae4); /* Gradient for the border */
+    border-image-slice: 1; /* Ensure the gradient spans the entire border */
+  }
+  
+  
+  .product-image img {
+    border-radius: 8px;
+  }
+  
+  .thumbnail-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .thumbnail {
+    width: 20%;
+    height: 50px;
+    border: 1px solid #0077b6;
+    border-radius: 8px;
+  }
+  
+  /* Product Details Section */
+  .product-details {
+    flex: 6; /* Take 6/10ths of the row */
+  }
+  
+  .product-details h1 {
+    font-size: 32px;
+    font-weight: 900;
+    color: #0077b6;
+    margin-bottom: 5px;
+  }
+  
+  .product-details p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .product-details h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0077b6;
+    margin-bottom: 5px;
+  }
+  
+  .product-details ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .product-details ul li {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  /* Quantity and Color Options */
+  .quantity-section, .color-section {
+    margin-bottom: 20px;
+  }
+  
+  .quantity-options button, .color-options button {
+    padding: 10px 20px;
+    border: 1px solid #0077b6;
+    border-radius: 8px;
+    background: white;
+    color: black;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px 30px;
+  }
+  
+  .quantity-options button:hover, .color-options button:hover {
+    background: #0077b6;
+    color: white;
+  }
+  
+  /* Contact Button */
+  .contact-button {
+    background: linear-gradient(to bottom, #48cae4, #0077b6);
+    color: white;
+    padding: 10px 30px;
+
+    font-family: "Nunito", sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 10px;
+  }
+  
+  .contact-button:hover {
+    background: #005bb5;
+  }
+  
+  /* Additional Information Section */
+  .additional-info {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .info-box {
+    flex: 1;
+    background: linear-gradient(to top, #0077b6, #48cae4);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .info-box h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .info-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .info-box ul li {
+    list-style: disc;
+    margin-left: 7%;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 300;
+  }
+  
+  .info-box p {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .info-box .right {
+    list-style: disc;
+  }
+
+  .main-text {
+    font-size: 20px;
+    color: #0077b6;
+    font-weight: 900;
+    }
+
+    .unit-text {
+      font-size: 15px;
+      color: #0077b6;
+      font-weight: 300;
+
+  }
+
+  .notification-popup {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom of the screen */
+    right: 20px; /* Distance from the right of the screen */
+    background-color: #48cae4;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it appears on top of other elements */
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+  }
+  
+  /* Animation for hiding */
+  .notification-popup.hide {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+
+  
+
+
+  

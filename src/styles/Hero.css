@@ -1,0 +1,43 @@
+.hero {
+  width: 100%;
+  position: relative;
+  height: 130vh; /* Full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/images/background.png');
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling of the image */
+}
+
+
+.button-33 {
+  background-color: white;
+  border-radius: 100px;
+  box-shadow: rgba(173, 216, 230, .2) 0 -50px 45px -36px inset, rgba(173, 216, 230, .15) 0 4px 8px, rgba(173, 216, 230, .15) 0 8px 16px, rgba(173, 216, 230, .15) 0 16px 32px, rgba(173, 216, 230, .15) 0 32px 64px; /* Light blue shadow */
+  color: #00b4d8; /* Light blue text color */
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'CerebriSans-Regular', -apple-system, system-ui, Nunito, sans-serif;
+  padding: 24px 80px; /* Double the original padding */
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 20px;
+  font-size: 32px; /* Double the original font size */
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  
+  /* Improve text appearance */
+  letter-spacing: 1px; /* Add space between letters */
+  font-weight: 700; /* Bold text for better contrast */
+  text-transform: uppercase; /* Make text uppercase for more emphasis */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.button-33:hover {
+  box-shadow: rgba(173, 216, 230, .35) 0 -50px 45px -36px inset, rgba(173, 216, 230, .25) 0 4px 8px, rgba(173, 216, 230, .25) 0 8px 16px, rgba(173, 216, 230, .25) 0 16px 32px, rgba(173, 216, 230, .25) 0 32px 64px; /* Light blue shadow on hover */
+  transform: scale(1.2) rotate(-1deg); /* Increase scale on hover for bigger effect */
+}

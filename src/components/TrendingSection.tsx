@@ -27,9 +27,7 @@ const TrendingSection: React.FC = () => {
             <img src={trend.image} alt={trend.name} className="trend-item-image" />
             <div className="trend-name-box">
               <h3 className="trend-name">{trend.name}</h3>
-              
             </div>
-            <p>{trend.description}</p>
           </div>
         ))}
       </div>

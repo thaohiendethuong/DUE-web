@@ -8,10 +8,10 @@ interface Product {
 }
 
 const products: Product[] = [
-  { id: 1, name: 'Bao Bì 1', image: '/images/product.png' },
-  { id: 2, name: 'Bao Bì 2', image: '/images/product.png' },
-  { id: 3, name: 'Bao Bì 3', image: '/images/product.png' },
-  { id: 4, name: 'Bao Bì 4', image: '/images/product.png' },
+  { id: 1, name: 'Bao Bì 1', image: '/DUE-web/images/product.png' },
+  { id: 2, name: 'Bao Bì 2', image: '/DUE-web/images/product.png' },
+  { id: 3, name: 'Bao Bì 3', image: '/DUE-web/images/product.png' },
+  { id: 4, name: 'Bao Bì 4', image: '/DUE-web/images/product.png' },
 ];
 
 const ProductShowcase: React.FC = () => {

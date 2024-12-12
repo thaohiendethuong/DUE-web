@@ -167,11 +167,11 @@
 
 
 .image-row img {
-  width: 30%; /* Set width of images */
+  width: 30%; /* Set width of DUE-web/images */
   height: auto; /* Keep the aspect ratio */
 
   box-sizing: border-box; /* Include border and padding in element's total size */
-  object-fit: cover; /* Ensure images cover the area without distortion */
+  object-fit: cover; /* Ensure DUE-web/images cover the area without distortion */
 }
 
 

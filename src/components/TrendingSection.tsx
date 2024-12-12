@@ -12,9 +12,9 @@ interface TrendItem {
 }
 
 const trends: TrendItem[] = [
-  { id: 1, name: 'Mẫu bao bì đẹp hot nhất trong tháng 10/2024', description: '"Tháng 10/2024 chứng kiến sự bùng nổ của các mẫu bao bì với thiết kế tối giản.', image: '/images/trnding.png', author: 'On Ideas',  date: new Date('2024-10-30')},
-  { id: 2, name: 'Mẫu bao bì đẹp hot nhất trong tháng 10/2024', description: '"Tháng 10/2024 chứng kiến sự bùng nổ của các mẫu bao bì với thiết kế tối giản.', image: '/images/trnding.png', author: 'On Ideas',  date: new Date('2024-10-30')},
-  { id: 3, name: 'Mẫu bao bì đẹp hot nhất trong tháng 10/2024', description: '"Tháng 10/2024 chứng kiến sự bùng nổ của các mẫu bao bì với thiết kế tối giản.', image: '/images/trnding.png', author: 'On Ideas',  date: new Date('2024-10-30')},
+  { id: 1, name: 'Mẫu bao bì đẹp hot nhất trong tháng 10/2024', description: '"Tháng 10/2024 chứng kiến sự bùng nổ của các mẫu bao bì với thiết kế tối giản.', image: '/DUE-web/images/trnding.png', author: 'On Ideas',  date: new Date('2024-10-30')},
+  { id: 2, name: 'Mẫu bao bì đẹp hot nhất trong tháng 10/2024', description: '"Tháng 10/2024 chứng kiến sự bùng nổ của các mẫu bao bì với thiết kế tối giản.', image: '/DUE-web/images/trnding.png', author: 'On Ideas',  date: new Date('2024-10-30')},
+  { id: 3, name: 'Mẫu bao bì đẹp hot nhất trong tháng 10/2024', description: '"Tháng 10/2024 chứng kiến sự bùng nổ của các mẫu bao bì với thiết kế tối giản.', image: '/DUE-web/images/trnding.png', author: 'On Ideas',  date: new Date('2024-10-30')},
 ];
 
 const TrendingSection: React.FC = () => {

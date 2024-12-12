@@ -16,7 +16,7 @@ const initialReviews: Review[] = [
     comment:
       'Dịch vụ tận tâm, nhiệt tình, luôn sẵn sàng hỗ trợ những yêu cầu của khách hàng. Sản phẩm chất lượng cao và đủ số lượng như đã yêu cầu. Các mom nên sử dụng dịch vụ của On Ideas nhé :3',
     rating: 5,
-    avatar: '/images/cat.jpeg',
+    avatar: '/DUE-web/images/cat.jpeg',
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const initialReviews: Review[] = [
     comment:
       'Dịch vụ tận tâm, nhiệt tình, luôn sẵn sàng hỗ trợ những yêu cầu của khách hàng. Sản phẩm chất lượng cao và đủ số lượng như đã yêu cầu. Các mom nên sử dụng dịch vụ của On Ideas nhé :3',
     rating: 4,
-    avatar: '/images/cat.jpeg',
+    avatar: '/DUE-web/images/cat.jpeg',
   },
 ];
 

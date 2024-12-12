@@ -18,7 +18,7 @@ const ProductItem = () => {
       price: 1000000,
       color: 'Trắng',
       quantity: 1,
-      image: '/images/product.png',
+      image: '/DUE-web/images/product.png',
     };
     addProduct(newProduct);
 
@@ -44,7 +44,7 @@ const ProductItem = () => {
       <div className="product-section">
         {/* Product Image */}
         <div className="product-image">
-          <img src="/images/product-big.png" alt="Product" />
+          <img src="/DUE-web/images/product-big.png" alt="Product" />
           {/* <div className="thumbnail-row">
             <div className="thumbnail"></div>
             <div className="thumbnail"></div>

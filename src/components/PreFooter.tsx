@@ -26,7 +26,7 @@ const PreFooter: React.FC = () => {
 
         {/* Logo Section */}
         <div className="footer-section logo-section">
-          <img src="/images/logo.png" alt="Logo" className="footer-logo" />
+          <img src="/DUE-web/images/logo.png" alt="Logo" className="footer-logo" />
         </div>
       </div>
     </footer>

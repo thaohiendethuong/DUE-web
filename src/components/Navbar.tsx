@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
       {/* Logo (Image) */}
       <div className="logo">
         <Link to="/">
-          <img src="/images/logo.png" alt="ON IDEAS Logo" />
+          <img src="/DUE-web/images/logo.png" alt="ON IDEAS Logo" />
         </Link>
       </div>
 

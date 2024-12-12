@@ -107,7 +107,7 @@ const ProductBar: React.FC = () => {
           {/* Example product cards */}
           {[...Array(9)].map((_, index) => (
             <div className="product-card-bar" key={index}>
-              <img src="/images/product.png" alt="Product" />
+              <img src="/DUE-web/images/product.png" alt="Product" />
               <p className="product-size">24x35cm</p>
               <p className="product-name">Bao Bì Giấy Loại 1</p>
               <p className="product-price">Liên hệ báo giá</p>

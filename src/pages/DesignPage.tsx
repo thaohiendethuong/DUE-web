@@ -151,16 +151,16 @@ const handleCreateImage = async (textInput: string) => {
             <div className="left-column">
               <div className="image-row">
                 <div className="action-div">
-                  <img src="/images/product.png" alt="Product 1" />
+                  <img src="/DUE-web/images/product.png" alt="Product 1" />
                 </div>
                 <div className="action-div">
-                  <img src="/images/product.png" alt="Product 2" />
+                  <img src="/DUE-web/images/product.png" alt="Product 2" />
                 </div>
                 <div className="action-div">
-                  <img src="/images/product.png" alt="Product 3" />
+                  <img src="/DUE-web/images/product.png" alt="Product 3" />
                 </div>
                 <div className="action-div">
-                  <img src="/images/product.png" alt="Product 4" />
+                  <img src="/DUE-web/images/product.png" alt="Product 4" />
                 </div>
               </div>
             </div>
@@ -168,12 +168,12 @@ const handleCreateImage = async (textInput: string) => {
             <div className="middle-column">
               {loading ? (
                 <div className="loading-spinner">
-                  <img src="/images/spinner.gif" alt="Loading..." />
+                  <img src="/DUE-web/images/spinner.gif" alt="Loading..." />
                 </div>
               ) : imageSrc ? (
                 <img src={imageSrc} alt="Generated Design" className="generated-image" />
               ) : (
-                <img src="/images/product-big.png" alt="Default Image" className="default-image" />
+                <img src="/DUE-web/images/product-big.png" alt="Default Image" className="default-image" />
               )}
             </div>
 

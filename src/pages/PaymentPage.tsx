@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from '../components/Navbar';
 import '../styles/PaymentPage.css'; // Ensure CSS is linked
 import PreFooter from '../components/PreFooter';

@@ -29,7 +29,7 @@ const initialReviews: Review[] = [
 ];
 
 const ReviewSection: React.FC = () => {
-  const [reviews, setReviews] = useState<Review[]>(initialReviews);
+  const [reviews, _] = useState<Review[]>(initialReviews);
   const [newRating, setNewRating] = useState<number>(0);
   const [newComment, setNewComment] = useState<string>('');
 
@@ -43,24 +43,6 @@ const ReviewSection: React.FC = () => {
     event: React.ChangeEvent<HTMLTextAreaElement>
   ) => {
     setNewComment(event.target.value);
-  };
-
-  // Handle adding a new review
-  const handleAddReview = () => {
-    if (newRating > 0 && newComment.trim()) {
-      const newReview: Review = {
-        id: reviews.length + 1,
-        name: 'Người dùng mới',
-        comment: newComment,
-        rating: newRating,
-        avatar: '/avatars/default-avatar.png', // Default avatar for new users
-      };
-      setReviews([...reviews, newReview]);
-      setNewRating(0); // Reset rating
-      setNewComment(''); // Reset comment
-    } else {
-      alert('Vui lòng chọn đánh giá và nhập nhận xét.');
-    }
   };
 
   return (

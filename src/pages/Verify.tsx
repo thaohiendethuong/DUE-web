@@ -3,8 +3,8 @@ import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 
 // Define the expected params type for useParams
-interface VerifyEmailParams {
-  token: string;
+interface VerifyEmailParams extends Record<string, string | undefined> {
+  token: string; // Explicitly define the token field
 }
 
 const VerifyEmail: React.FC = () => {
@@ -26,8 +26,12 @@ const VerifyEmail: React.FC = () => {
             navigate('/login'); // Redirect to login page after successful verification
           }, 2000); // Optional delay before redirect
         }
-      } catch (error) {
-        setMessage(error.response?.data?.message || 'Failed to verify email');
+      } catch (err) {
+        if (axios.isAxiosError(err)) {
+          setMessage(err.response?.data?.message || 'Failed to verify email');
+        } else {
+          setMessage('An unexpected error occurred');
+        }
         setLoading(false);
       }
     };

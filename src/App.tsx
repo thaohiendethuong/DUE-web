@@ -14,7 +14,7 @@ import { CartProvider } from './context/CartContext';
 function App() {
   return (
     <CartProvider>
-    <Router basename="/DUE-weblo"> {/* Add the basename here */}
+    <Router basename="/DUE-web"> {/* Add the basename here */}
       <div className="App">
         <Routes>
           {/* Render the Home page */}

@@ -31,17 +31,23 @@ const SignupPage: React.FC = () => {
       // Update the API call to target the backend on port 5000
       const response = await axios.post('http://localhost:5000/api/auth/signup', { username, password, repassword });
       setMessage(response.data.message); // Display success message
-    } catch (error) {
-      // If the error is due to email already being registered, display a specific message
-      if (error.response?.status === 400) {
-        setError('Email đã được đăng ký. Vui lòng sử dụng email khác.');
+    } catch (err) {
+      // Use type guard or cast to handle `err` properly
+      if (axios.isAxiosError(err)) {
+        // Check if it's an Axios error
+        if (err.response?.status === 400) {
+          setError('Email đã được đăng ký. Vui lòng sử dụng email khác.');
+        } else {
+          // Handle other Axios-specific errors
+          setError('Có lỗi xảy ra. Vui lòng thử lại sau.');
+        }
       } else {
-        // Handle other errors (such as server errors)
-        setError('Có lỗi xảy ra. Vui lòng thử lại sau.');
+        // For non-Axios errors
+        setError('Đã xảy ra lỗi không xác định.');
       }
+    } finally {
+      setLoading(false);
     }
-
-    setLoading(false);
   };
 
   return (
